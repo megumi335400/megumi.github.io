@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 150px;
+            background-color: #bfa;
+            margin: 0 auto;position: relative;
+        }
+        .box2{
+            height: 91px;
+            width: 91px;
+            background-image: url(./img/11.png);
+            /* margin:0 auto; */
+            margin:auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            animation:text .5s infinite both steps(6);
+        }
+        @keyframes text {
+            from{
+                background-position: 0 0;
+            }
+            to{
+                background-position: -551px 0;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+
+        </div>
+    </div>
+</body>
+</html>
